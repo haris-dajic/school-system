@@ -1,0 +1,28 @@
+#ispisId{
+    color: white;
+    font-size: 25px;
+    background-color: darkturquoise;
+    border: 1px solid white;
+    width: 30%;
+	float: left;
+	margin-top: 15%;
+	margin-left: 35%;
+	height: 50px;
+
+}
+
+#pretragaUnos{
+
+    float: left;
+    margin-top: 3%;
+    margin-left: 40%;   
+    height: 25px;
+}
+
+#pretraga{
+
+    float: left;
+    margin-top: 3%;
+    margin-left: 40%;
+    height: 25px;
+}

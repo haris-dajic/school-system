@@ -1,0 +1,289 @@
+.statistika *
+{
+	margin: 0;
+	padding: 0;
+}
+.row-2
+{	
+	border:1px solid #FA594E;
+	float: left;
+	width: 70%;
+	height: 850px;
+	margin-top: 5%;
+	margin-left: 15%;
+	margin-bottom: 2%;
+	background-color: rgba(229,197,182,0.1);
+}
+.row-3
+{
+	width: 100%;
+	text-align: center;
+	color: #FA594E;
+}
+.row-4
+{
+	width: 100%;
+	height: 30px;
+}
+.row-5
+{
+	float: left;
+	width: 45%;
+	text-align: left;
+	margin-left: 4%;
+	color: #FA594E;
+}
+.row-6
+{
+	float: right;
+	width: 45%;
+	text-align: right;
+	margin-right: 4%;
+	color: #FA594E;
+}
+.row-5,.row-6
+{
+	line-height: 30px;
+}
+
+.row-7
+{
+	width: 100%;
+	height: 200px;
+	border-collapse: collapse;
+}
+
+
+.paragraf
+{
+	margin-top: 1.5%;
+	line-height: 40px;
+	border: 2px solid white;
+} 
+.paragraf:hover
+{
+	border: 1px solid #FA594E;
+}
+.row-9
+{
+	float: right;
+	width: 69%;
+	height: 200px;
+}
+.row-10
+{
+	text-align: center;
+	font-size: 25px;
+	height: 30px;
+	line-height: 30px;
+	color: #FA594E;
+}
+.row-11
+{
+	border: 1px solid #FA594E;
+	height: 30px;
+	line-height: 30px;
+	color: #FA594E;
+	text-align: center;
+	font-size: 25px;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 0.5%;
+}
+.row-12
+{
+	margin: 2%;
+}
+.row-13
+{
+	margin-top: 5%;
+	width: 30%;
+	height: 60px;
+	margin-left: 36%;
+	margin-bottom: 5%;
+}
+.row-3,.row-4,.row-7,.row-10
+{
+	border-bottom:1px solid #FA594E;
+}
+
+.statistika button
+{
+	/*height: 100%; */
+	/*width: 15%;  */
+	display: inline;
+  	background-color: white;
+ 	margin: 0%;
+ 	padding: 2% 2%;
+
+  	cursor: pointer;
+  	user-select: none;
+  	transition: all 150ms linear;
+  	text-align: center;
+  	white-space: nowrap;
+  	text-decoration: none !important;
+  	text-transform: none;
+  	text-transform: capitalize;
+
+  	color: black;
+  	border: 0 none;
+  	border-radius: 4px;
+
+  	font-size: 13px;
+  	font-weight: 500;
+  	line-height: 1.3;
+/*
+  	-webkit-appearance: none;
+  	-moz-appearance:    none;
+  	appearance:         none;
+ 
+  	justify-content: center;
+  	align-items: center;  */
+  	flex: 0 0 160px;
+  
+  	box-shadow: 2px 5px 10px var(--color-smoke);
+}
+.statistika button:hover
+{
+	background-color: #FA594E;
+}
+.statistika  textarea
+{
+	resize: none;
+	width: 25%;
+	height: 125px;
+	margin-left: 5%;
+	margin-right: 2%;
+	margin-top: 2%;
+	text-align: center;
+	vertical-align: 50%;
+}
+
+#tabelaStatistika,.statistika th,.statistika tr,.statistika td
+{
+	border:1px solid #FA594E;
+	border-collapse: collapse;
+}
+
+
+#tabelaStatistika
+{
+	width: 100%;
+	height: 100%;
+	color: #FA594E;
+}
+.statistika tr:first-child th
+{
+	/* background-image: url("ikona.png"); /*skinuti sliku*/
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.student
+{
+	background-color: rgba(229,197,182,0.3);;
+}
+.statistika th
+{
+	background-color: rgba(250,8,78,0.2);
+}
+.statistika a
+{
+	text-decoration: none;
+	color: #FA594E;
+}
+
+@media (max-width: 699px)
+{
+	.row-2
+	{
+		margin-top: 20%;
+		height: 1350px;
+	}
+	.row-7
+	{
+		height: 350px;
+	}
+	.row-8
+	{
+		font-size: 18px;
+		width: 100%;
+		height: 150px;
+	}
+	.paragraf
+	{
+		line-height: 22px;
+	}
+	.row-9
+	{
+		clear: both;
+		width: 100%;
+	}
+	textarea
+	{
+		display: inline-block;
+		width: 90%;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+	.row-13
+	{
+		width: 50%;
+		margin-right: 25%;
+		margin-left: 25%;
+	}
+}
+
+@media (min-width: 586px) and (max-width: 620px)
+{
+	.row-2
+	{
+		margin-top: 25%;
+	}
+/*	.row-7
+	{
+		height: ; dodati visinu
+	} */
+	.row-8
+	{
+		font-size: 15px;
+		width: 100%;
+		height: 100px;
+	}
+	.paragraf
+	{
+		line-height: 17px;
+	}
+	.row-9
+	{
+		width: 100%;
+	}
+	.row-5,.row-6
+	{
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 410px) and (max-width: 585px)
+{
+	.row-2
+	{
+		margin-top: 32%;
+	}
+	.row-5,.row-6
+	{
+		font-size: 10px;
+	}
+	.row-13
+	{
+		margin-top: 5%;
+		width: 50%;
+		height: 60px;
+		margin-left: 25%;
+		margin-bottom: 5%;
+	}
+	button
+	{
+		width: 14%;
+	}
+}

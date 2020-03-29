@@ -1,0 +1,119 @@
+<div id="Log">
+<div id="log_in">
+<!--	<form method="post" action="/logovanje">   -->
+		<h2>Log in:</h2>
+		<input type="text" name="email1" id="login_mail" placeholder="email">
+		<input type="text" name="password1" id="login_pass" placeholder="šifra">
+		<button class="dugme_log" onclick="login()">Log in</button>
+<!--	</form>  -->
+</div>
+<div id="reg_nastavnika">
+	<h2>Registruj nastavnika</h2>
+<!--	<form method="post" action="/registrujnastavnika">  -->
+		<table class="nastavnik">
+			<tr>
+				<td colspan="2"> 
+					<input type="text" id="imeNas" class="ime_prezime" name="ime" placeholder="ime i prezime" onblur="validiraj(Validacija.validirajImeiPrezime(this.value),0,this.id)">
+				
+				 </td> 
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="korisnickoIme" name="Korisnicko_ime" placeholder="korisnicko ime">
+				</td>
+				<!-- Provjeriti validaciju za ovo.Da li uopšte treba validirat? -->
+				<td>
+					<input type="text" id="fakultet_mailNas" name="fakultetski_mail" placeholder="fakultetski mail" onblur="validiraj(Validacija.validirajFakultetski(this.value),9,this.id)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="nasPass" name="password" placeholder="password" onblur="validiraj(Validacija.validirajPassword(this.value),4,this.id)">
+				</td>
+				<td>
+					<input type="text" id="nasPotPass" name="password" placeholder="potvrda passworda" onblur="validiraj(Validacija.validirajPotvrdu(this.value),5,this.id)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="number" id="brGrupa" min="1" max="7" placeholder="unesi broj grupa" onblur="validiraj(Validacija.validirajGrupu(this.value),2,this.id)">
+				</td>
+				<td>
+					<input type="text" placeholder="regex za repozitorij" id="regex">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="number" min="1" max="6" placeholder="semestar" id="semestar">
+				</td>
+				<!-- provjeriti za ovo -->
+				<td>
+					<input type="text" id="akGodina" min="2017" max="2020" value="2017" placeholder="akademska godina" onblur="validiraj(Validacija.validirajAkGod(this.value),3,this.id)">
+				</td>
+			</tr>
+		</table>
+<!--	</form>  -->
+	<button class="dugme_log" onclick="registracijaNatavnika()">Registruj nastavnika</button>
+	<button class="dodatno" onclick="button_student()">Registruj studenta</button>
+</div>
+
+<div id="reg_studenta">
+<!--	<form action="/registrujstudenta" method="post">  -->
+		<h2>Registruj studenta</h2>
+		<table class="student_reg">
+			<tr>
+				<!-- <td colspan="2"> -->
+					<td><input type="text" id="studIme" class="ime_prezime" name="ime" placeholder="ime i prezime" onblur="validiraj(Validacija.validirajImeiPrezime(this.value),0,this.id)"> </td>
+					<td><input type="text" id="korIme" class="ime_prezime" name="ime" placeholder="korisnicko ime"></td>
+					<!-- </td> -->
+				
+			</tr>
+			<tr>
+				<td>
+					<input type="number" id="brIndeksa" name="broj_indeksa" placeholder="broj indeksa" onblur="validiraj(Validacija.validirajIndex(this.value),1,this.id)">
+				</td>
+				<td>
+					<select id="grupa">
+						<option value="1">WT1</option>
+						<option value="2">WT2</option>
+						<option value="3">WT3</option>
+						<option value="4">WT4</option>
+						<option value="5">WT5</option>
+						<option value="6">WT6</option>
+						<option value="7">WT7</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="akGodinaStud" name="ak_godina" placeholder="akademska godina" onblur="validiraj(Validacija.validirajAkGod(this.value),3,this.id)">
+				</td>
+				<td>
+					<input type="text" id="nazivRepoz" name="naziv_repozitorija" placeholder="naziv repozitorija" onblur="validiraj(Validacija.validirajNazivRepozitorija(this.value),10,this.id)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="passStud" name="password" placeholder="password" onblur="validiraj(Validacija.validirajPassword(this.value),4,this.id)">
+				</td>
+				<td>
+					<input type="text" id="passPotStud" name="potvrda_passworda" placeholder="potvrda passworda" onblur="validiraj(Validacija.validirajPotvrdu(this.value),5,this.id)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="bitbucketURL" name="url" placeholder="bitbucker url" onblur="validiraj(Validacija.validirajBitbucketURL(this.value),6,this.id)">
+				</td>
+				<td>
+					<input type="text" id="ssh" name="bit_bucket_ssh" placeholder="bitbucket ssh" onblur="validiraj(Validacija.validirajBitbucketSSH(this.value),6,this.id)">
+				</td>
+			</tr>
+		</table>
+<!--	</form> -->
+	<button class="dugme_log" onclick="registracijaStudenta()">Registruj studenta</button>
+	<button class="dodatno" onclick="button_nastavnik()">Registruj nastavnika</button>
+</div>
+<div id="ispis">
+	<p id="ispis_p"></p>
+</div>
+</div>

@@ -1,0 +1,81 @@
+<div class="unosKomentari">
+<div class="dugme_spirala">
+<!--	<form> -->
+	   <button>Spirala 1</button>
+	   <button>Spirala 2</button>
+	   <button>Spirala 3</button>
+	   <button>Spirala 4</button>
+<!--	</form> -->
+</div>
+<div class="tabela_komentari">
+	<table id="tabelaKomentari">
+		<tr>
+			<th>Sifra studenta</th>
+		    <th>Link do repozitorija</th>
+			<th>Komentar</th>
+			<th>Ocjena</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><a href="#">Neki put</a></td>
+			<td><input type="text"  placeholder="Unesi komentar" id="unosKomentara"></td>
+			<td><input type="number" min="1" max="5" placeholder="Unesi ocjenu" id="unosKomentara"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><a href="#">Neki put</a></td>
+			<td><input type="text"  placeholder="Unesi komentar" id="unosKomentara"></td>
+			<td><input type="number" min="1" max="5" placeholder="Unesi ocjenu" id="unosKomentara"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><a href="#">Neki put</a></td>
+			<td><input type="text"  placeholder="Unesi komentar" id="unosKomentara"></td>
+			<td><input type="number" min="1" max="5" placeholder="Unesi ocjenu" id="unosKomentara"></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><a href="#">Neki put</a></td>
+			<td><input type="text"  placeholder="Unesi komentar" id="unosKomentara"></td>
+			<td><input type="number" min="1" max="5" placeholder="Unesi ocjenu" id="unosKomentara"></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><a href="#">Neki put</a></td>
+			<td><input type="text"  placeholder="Unesi komentar" id="unosKomentara"></td>
+			<td><input type="number" min="1" max="5" placeholder="Unesi ocjenu" id="unosKomentara"></td>
+		</tr>
+	</table>
+</div>
+<div class="tabela_ocjene">
+	<table class="dodatnaTabela">
+		<tr>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr>
+			<td class="kolona"><button onclick="svidja(1)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button></td>
+			<td class="kolona"><button onclick="ne_svidja(1)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button></td>
+		</tr>
+		<tr>
+			<td class="kolona"><button onclick="svidja(2)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button></td>
+			<td class="kolona"><button onclick="ne_svidja(2)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button></td>
+		</tr>
+		<tr>
+			<td class="kolona"><button onclick="svidja(3)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button></td>
+			<td class="kolona"><button onclick="ne_svidja(3)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button></td>
+		</tr>
+		<tr>
+			<td class="kolona"><button onclick="svidja(4)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button></td>
+			<td class="kolona"><button onclick="ne_svidja(4)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button></td>
+		</tr>
+		<tr>
+			<td class="kolona"><button onclick="svidja(5)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button></td>
+			<td class="kolona"><button onclick="ne_svidja(5)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button></td>
+		</tr>
+	</table>
+	<input type="text" id="kolSpirale" max="4" min="1">
+	<input type="text" id="kolIndex">
+	<input type="button" id="btnReg" name="Potvrdi">
+</div>
+</div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="/CSS/common.css">
+            <link rel="stylesheet" type="text/css" href="/CSS/login.css">
+            <link rel="stylesheet" type="text/css" href="/CSS/statistika.css">
+            <link rel="stylesheet" type="text/css" href="/CSS/unoskomentara.css"> 
+            <link rel="stylesheet" type="text/css" href="/CSS/unosSpiska.css">
+            <link rel="stylesheet" type="text/css" href="/CSS/ispis.css"> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+    <body>
+      <!--  <form> -->
+            <div class="meni">
+                    <div class="logo"><img src="/Slike/logo.jpg" alt="Logo"></div>
+                       <ul>
+                            <li id="logMeni"><a onclick="loadContent('login')" href="#">Log in</a></li>
+                            <li id="statistikaMeni"><a onclick="loadContent('statistika')" href="#">Statistika</a></li>
+                            <li id="komentariMeni"><a onclick="loadContent('unoskomentara')" href="#">Unos komentara</a></li>
+                            <li id="spisakMeni"><a onclick="loadContent('unosSpiska')" href="#">Unos spiska</a></li>
+                            <li id="nastavnikMeni"><a onclick="loadContent('nastavnik')" href="#">Nastavnik</a></li>
+                            <li id="bitMeni"><a onclick="loadContent('bitBucket')" href="#">Bit bucket pozivi</a></li>
+                            <li id="listaMeni"><a onclick="prikazKorisnika()" href="#">Lista korisnika</a></li>
+
+                        </ul>			
+            </div>
+            <div id="sadrzaj">
+                                  
+            </div>
+          <!--  </form> -->
+            <script src="/JavaScript/loadContent.js"></script>
+            <script type="text/javascript" src="/JavaScript/validacija.js"></script>
+            <script type="text/javascript" src="/JavaScript/poruke.js"></script>
+            <script type="text/javascript" src="/JavaScript/funkcije.js"></script>
+            <script type="text/javascript" src="/JavaScript/spisak.js"></script>
+            <script type="text/javascript" src="/JavaScript/registracija.js"></script>
+            <script type="text/javascript" src="/JavaScript/login.js"></script>
+    </body>
+</html>
+    

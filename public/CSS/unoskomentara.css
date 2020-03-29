@@ -1,0 +1,266 @@
+
+.dugme_spirala
+{
+	width: 65%;
+	margin-top: 8%;
+	margin-left: 9%;
+	height: 50px;
+}
+.unosKomentari button
+{
+	height: 50px;
+	width: 24%;
+	color: #FA594E;
+	font-size: 25px;
+	border:none;
+}
+.dugme_spirala button:hover
+{
+	background-color: #FA594E;
+	color: black;
+}
+
+.tabela_komentari
+{
+	float: left;
+	border:1px solid #FA594E;
+	width: 70%;
+	margin-top: 1%;
+	margin-left: 9%;
+	height: 350px;
+	color: #FA594E;
+	background-color: rgba(229,197,182,0.1); 
+}
+.tabela_ocjene
+{
+	width: 10%;
+	float: right;
+	margin-top: 1%;
+	margin-left: 0;
+	margin-right: 10%;
+	height: 350px;
+}
+.unosKomentari table
+{
+	width: 100%;
+	height: 100%;
+}
+.unosKomentari th,.unosKomentari td,.unosKomentari tr
+{
+	border:1px solid #FA594E;
+	width: 24%;
+	
+}
+.unosKomentari table,.unosKomentari th,.unosKomentari td,.unosKomentari tr
+{
+	border-collapse: collapse;
+}
+.unosKomentari th
+{
+	height: 80px;
+	font-family: old stanford tt;
+	font-size: 30px;
+}
+.unosKomentari td{
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	font-family: calibri;
+	font-size: 20px;
+}
+#unosKomentara{
+
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	border:0;
+	text-align: center;
+	background: transparent;
+	font-size: 20px;
+}
+#unosKomentara:hover{
+	background:  #FA594E;
+}
+#unosKomentara:checked
+{
+	border-color: #FFFFFF;
+}
+.unosKomentara a
+{
+	text-decoration: none;
+	color: #FA594E;
+}
+.unosKomentari i
+{
+	width: 100%;
+	color:antiquewhite; 
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-right: 40%;
+	text-align: center;
+}
+.unosKomentari i:hover
+{
+	color: rgb(231, 94, 94);
+}
+.kolona
+{
+	border:none;
+}
+.kolona button
+{
+	width: 100%;
+	background: transparent;
+}
+.kolona .button:after 
+{
+    border:none;			/*/pitati nekoga za okvir nakon klika na like*/
+}
+.dodatnaTabela
+{
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin:0;
+	background: transparent;
+	border: 0;
+}
+.dodatnaTabela th,.dodatnaTabela td,.dodatnaTabela tr
+{
+	width: 50%;
+	border:0;
+}
+.dodatnaTabela th{
+	height: 80px;
+	font-family: old stanford tt;
+	font-size: 30px;
+	/*background-color: #191919; */
+}
+@media (max-width: 699px) and (min-width: 675px)
+{
+	.dugme_spirala
+	{
+		margin-top: 24%;
+	}
+	button
+	{
+		width: 20%;
+		font-size: 20px;
+	}
+	th
+	{
+		height: 60px;
+		font-size: 20px;
+	}
+	.tabela_komentari
+	{
+		height: 250px;
+	}
+	td
+	{
+		font-size: 18px;
+	}
+	input
+	{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 675px) and (min-width: 610px)
+{
+  .dugme_spirala
+  {
+  		margin-top: 20%;
+  }
+  button
+  {
+  	width: 15%;
+  	font-size: 15px;
+  }
+  th
+  {
+  	height: 45px;
+  	font-size: 16px;
+  }
+  .tabela_komentari
+  {
+  	height: 210px;
+  }
+  td
+  {
+  	font-size: 14px;
+  }
+  input
+  {
+  	font-size: 14px;
+  }
+}
+
+@media (max-width: 610px) and (min-width: 495px)
+{
+	.dugme_spirala
+	{
+		margin-top: 25%;
+		margin-left: 2%;
+	}
+	button
+	{
+		width: 18%;
+		font-size: 12px;
+	}
+	.tabela_komentari
+	{
+		height: 245px;
+		margin-left: 2%;
+	}
+	th
+	{
+		height: 40px;
+		font-size: 15px;
+	}
+	td
+	{
+		height: 40px;
+		font-size: 14px;
+	}
+	input
+	{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 494px) and (min-width: 410px)
+{
+	.dugme_spirala
+	{
+		margin-top: 30%;
+		margin-left: 2%;
+	}	
+	button
+	{
+		width: 20%;
+		font-size: 12px;
+	}
+	.tabela_komentari
+	{
+		height: 245px;
+		margin-left: 2%;
+		width: 96%;
+	}
+	th
+	{
+		height: 40px;
+		font-size: 14px;
+	}
+	td
+	{
+		height: 37px;
+		font-size: 12px;
+	}
+	input
+	{
+		font-size: 12px;
+	}
+}
