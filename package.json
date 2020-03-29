@@ -16,7 +16,7 @@
     "mysql2": "^1.5.1",
     "node-session": "^1.2.1",
     "path": "^0.12.7",
-    "sequelize": "^4.31.2",
+    "sequelize": "^5.15.1",
     "xss-filters": "^1.2.7"
   },
   "devDependencies": {},
